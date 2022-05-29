@@ -1,0 +1,82 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    max-width: 450px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    align-items: flex-end;
+}
+
+.avatar {
+    padding-right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.messageContent {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.bubbleMessage {
+    display: flex;
+    background: #e04d50;
+    padding: 5px;
+    border-radius: 1em;
+    position: relative;
+
+}
+
+.bubbleMessage::before {
+    content: "";
+    position: absolute;
+    left: -2.5%;
+    bottom: .1em;
+    width: 1.8em;
+    height: .9em;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background: inherit;
+    margin-left: -.9em;
+}
+
+.bubbleMessage::after {
+    content: "";
+    position: absolute;
+    left: -21%;
+    bottom: .2em;
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+    background: white;
+}
+
+.messageText {
+    font-size: 14px;
+    padding: 0;
+    margin: 0 0 0 3px;
+    color: white;
+}
+
+.nickname {
+    font-weight: bold;
+    color: #e0df1d;
+    margin: 0 0 0 3px;
+}
+
+.time {
+    font-size: 11px;
+    color: lightsalmon;
+    margin: 0;
+    padding-left: 4px;
+    align-self: end;
+}
+
+
