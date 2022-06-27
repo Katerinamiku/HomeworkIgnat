@@ -1,5 +1,6 @@
 .body {
     background: #f2eee3;
+
 }
 
 .navMenu, .nav, .menu {
@@ -9,7 +10,6 @@
 }
 
 .nav {
-    position: relative;
     background: rgba(0, 0, 0, .6);
     padding: 3px;
     transition: 0.5s;
@@ -28,7 +28,7 @@
     transition: 0.5s;
 }
 
-.nav input:checked ~ .menu {
+.nav:hover .menu {
     width: 350px;
 }
 
@@ -65,7 +65,7 @@
 
 .nav span {
     position: absolute;
-    left: 10px;
+    left: 20px;
     width: 17px;
     height: 2px;
     border-radius: 70px;
@@ -74,26 +74,25 @@
     transition: 0.5s;
 }
 
-.nav input:checked ~ span {
-    background-color: #ffffff;
-}
-
 .nav span:nth-child(2) {
     transform: translateY(-8px);
 }
 
-.nav input:checked ~ span:nth-child(2) {
+.nav input:hover ~ span:nth-child(2) {
     transform: translateY(0) rotate(-45deg);
+    background-color: #fff;
 }
 
 .nav span:nth-child(3) {
     transform: translateY(8px);
 }
 
-.nav input:checked ~ span:nth-child(3) {
+.nav input:hover ~ span:nth-child(3) {
     transform: translateY(0) rotate(45deg);
+    background-color: #fff;
 }
 
-.nav input:checked ~ span:nth-child(4) {
+.nav input:hover ~ span:nth-child(4) {
     transform: translateY(0) rotate(45deg);
+    background-color: #fff;
 }
