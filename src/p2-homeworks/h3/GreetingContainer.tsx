@@ -22,7 +22,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const addUser = () => {
         if (name === '') {
             setError('Name is required!')
-            setName('')
         } else {
             alert('Hello ' + name + '!') // need to fix
             addUserCallback(name)

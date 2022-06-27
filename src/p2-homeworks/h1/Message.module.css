@@ -6,6 +6,7 @@ body {
     margin: 10px;
     display: flex;
     flex-direction: column;
+    background: #f2eee3;
 }
 
 .message {
@@ -14,10 +15,11 @@ body {
 }
 
 .avatar {
-    padding-right: 20px;
+    z-index: 3;
     width: 40px;
     height: 40px;
     border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, .6);
 }
 
 .messageContent {
@@ -27,9 +29,11 @@ body {
 }
 
 .bubbleMessage {
+
     display: flex;
-    background: #e04d50;
-    padding: 5px;
+    background: rgba(0, 0, 0, .6);
+    padding: 8px;
+    margin-left: 15px;
     border-radius: 1em;
     position: relative;
 
@@ -48,34 +52,37 @@ body {
 }
 
 .bubbleMessage::after {
+
     content: "";
     position: absolute;
-    left: -21%;
+    left: -19%;
     bottom: .2em;
     width: 1.8em;
     height: 1.8em;
     border-radius: 50%;
-    background: white;
+    background: #f2eee3;
 }
 
 .messageText {
     font-size: 14px;
     padding: 0;
     margin: 0 0 0 3px;
-    color: white;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
 .nickname {
-    font-weight: bold;
-    color: #e0df1d;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #03e9f4;
     margin: 0 0 0 3px;
 }
 
 .time {
     font-size: 11px;
-    color: lightsalmon;
+    color: #f2eee3;
     margin: 0;
-    padding-left: 4px;
+    padding-left: 6px;
     align-self: end;
 }
 

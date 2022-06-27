@@ -1,5 +1,6 @@
 .superInput {
-
+    border: 2px solid blue;
+    background: lightskyblue;
 }
 
 .errorInput {
@@ -9,4 +10,17 @@
 
 .error {
     color: red;
+    letter-spacing: 2px;
+}
+.superInput {
+    padding: 5px 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background: transparent;
+    margin-right: 5px;
+    color: #fff;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
 }

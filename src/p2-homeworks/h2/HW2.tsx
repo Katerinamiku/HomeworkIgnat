@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
 
-// types
 export type AffairType = {
     _id: number
     name: string
@@ -9,7 +8,6 @@ export type AffairType = {
 }
 export type FilterType = 'all' | 'high' | 'middle' | 'low'
 
-// constants
 const defaultAffairs: Array<AffairType> = [
     {_id: 1, name: 'React', priority: 'high'},
     {_id: 2, name: 'anime', priority: 'low'},
@@ -18,7 +16,6 @@ const defaultAffairs: Array<AffairType> = [
     {_id: 5, name: 'html & css', priority: 'middle'},
 ]
 
-// pure helper functions
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => (filter === 'all') ? affairs : affairs.filter(affair => affair.priority === filter)
 
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => affairs.filter(a => a._id !== _id)

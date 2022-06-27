@@ -1,0 +1,99 @@
+.body {
+    background: #f2eee3;
+}
+
+.navMenu, .nav, .menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav {
+    position: relative;
+    background: rgba(0, 0, 0, .6);
+    padding: 3px;
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .4);
+    height: 25px;
+}
+
+.menu {
+    margin: 0;
+    padding-left: 10px;
+    width: 0;
+    height: 18px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ .menu {
+    width: 350px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #03e9f4;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+
+.menu li a:hover {
+    background: #03e9f4;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.nav input {
+    cursor: pointer;
+    opacity: 0;
+    width: 15px;
+    height: 15px;
+}
+
+.nav span {
+    position: absolute;
+    left: 10px;
+    width: 17px;
+    height: 2px;
+    border-radius: 70px;
+    background-color: #03e9f4;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ span {
+    background-color: #ffffff;
+}
+
+.nav span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.nav input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.nav span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.nav input:checked ~ span:nth-child(4) {
+    transform: translateY(0) rotate(45deg);
+}
