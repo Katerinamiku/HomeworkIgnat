@@ -1,55 +1,92 @@
 .affairs {
-    background-color: #aef9fe;
     padding: 5px;
 }
 
 .listOfAffairs {
     margin: 2px;
     padding: 3px;
-    width: 280px;
-    background-color: #afffcd;
+    width: 310px;
     border: 1px solid gray;
     border-radius: 10px;
     font-size: 16px;
+    background: rgba(0, 0, 0, .6);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
 }
 
 .listItems {
     margin: 5px;
     display: grid;
+    align-items: center;
     grid-template-columns: 2fr 2fr 1fr;
 }
 
-button {
-    padding: 1px 10px 2px 10px;
-    margin: 5px;
-    background-color: #afffcd;
+.affairs button {
+    background: rgba(0, 0, 0, 0);
+    padding: 3px 8px 3px 8px;
+    border: rgba(0, 0, 0, .2);
     border-radius: 5px;
-    border: solid 1px darkblue;
-    color: darkblue;
+    color: #03e9f4;
+    transition: .5s;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.affairs button:hover {
+    overflow: hidden;
+    background: #03e9f4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.filterButtons button {
+    background: rgba(0, 0, 0, .4);
+    padding: 5px 8px 5px 8px;
+    margin: 5px;
+    border: rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    color: #03e9f4;
+    transition: .5s;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 60%);
 }
 
 .name {
     width: 100px;
-    color: darkslategray;
+    color: #ffffff;
+    letter-spacing: 2px;
 }
 
 .red {
     width: 30%;
     padding: 4px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(255, 0, 0, 1) 50%, rgba(0, 212, 255, 0) 100%);
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
 .yellow {
     width: 50%;
     padding: 4px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(255, 248, 0, 1) 50%, rgba(0, 212, 255, 0) 100%);
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-style: italic;
 }
 
 .green {
     width: 25%;
     padding: 4px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgba(0, 255, 8, 1) 50%, rgba(0, 212, 255, 0) 100%);
+    color: #ffffff;
+    letter-spacing: 2px;
+    opacity: 0.5;
 }
