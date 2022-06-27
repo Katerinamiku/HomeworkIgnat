@@ -2,10 +2,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     font-size: 14px;
     font-weight: normal;
-    max-width: 450px;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
     background: #f2eee3;
 }
 
@@ -36,7 +33,6 @@ body {
     margin-left: 15px;
     border-radius: 1em;
     position: relative;
-
 }
 
 .bubbleMessage::before {
