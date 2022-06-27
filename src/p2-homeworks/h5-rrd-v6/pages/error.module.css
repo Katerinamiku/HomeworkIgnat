@@ -1,0 +1,24 @@
+.errorPage {
+    background-image: url("EBXUFA6WsAAsW5q.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: -apple-system,\.SFNSText-Regular,Helvetica Neue,Roboto,Segoe UI,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 700px;
+}
+
+.errorPage h1 {
+    font-size: 144px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.errorPage h2 {
+
+    font: inherit;
+    font-size: 18px;
+}
