@@ -32,7 +32,8 @@ body {
     margin-left: 15px;
     border-radius: 1em;
     position: relative;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, .4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+
 }
 
 .bubbleMessage::before {
@@ -48,6 +49,7 @@ body {
 }
 
 .bubbleMessage::after {
+    z-index: 2;
     content: "";
     position: absolute;
     left: -18%;

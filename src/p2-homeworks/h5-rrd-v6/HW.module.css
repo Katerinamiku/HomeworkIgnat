@@ -1,6 +1,5 @@
 .body {
     background: #f2eee3;
-
 }
 
 .navMenu, .nav, .menu {
@@ -28,7 +27,7 @@
     transition: 0.5s;
 }
 
-.nav:hover .menu {
+.menuActive {
     width: 350px;
 }
 
@@ -54,45 +53,4 @@
     0 0 25px #03e9f4,
     0 0 50px #03e9f4,
     0 0 100px #03e9f4;
-}
-
-.nav input {
-    cursor: pointer;
-    opacity: 0;
-    width: 15px;
-    height: 15px;
-}
-
-.nav span {
-    position: absolute;
-    left: 20px;
-    width: 17px;
-    height: 2px;
-    border-radius: 70px;
-    background-color: #03e9f4;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
-.nav span:nth-child(2) {
-    transform: translateY(-8px);
-}
-
-.nav input:hover ~ span:nth-child(2) {
-    transform: translateY(0) rotate(-45deg);
-    background-color: #fff;
-}
-
-.nav span:nth-child(3) {
-    transform: translateY(8px);
-}
-
-.nav input:hover ~ span:nth-child(3) {
-    transform: translateY(0) rotate(45deg);
-    background-color: #fff;
-}
-
-.nav input:hover ~ span:nth-child(4) {
-    transform: translateY(0) rotate(45deg);
-    background-color: #fff;
 }
