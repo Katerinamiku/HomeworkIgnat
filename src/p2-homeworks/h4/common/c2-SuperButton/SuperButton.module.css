@@ -1,15 +1,17 @@
 
 .superButton {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, .4);
     padding: 3px 8px 3px 8px;
     border: rgba(0, 0, 0, .2);
     border-radius: 5px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 60%);
     color: #03e9f4;
     transition: .5s;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 4px;
+    margin-left: 10px;
 }
 
 .superButton:hover {
