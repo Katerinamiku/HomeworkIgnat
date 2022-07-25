@@ -1,0 +1,32 @@
+.clockWindow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 8px;
+    width: 150px;
+    height: 90px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .6);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text {
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.time {
+    color: #03e9f4;
+}
+
+.date {
+    color: #03e9f4;
+
+}
