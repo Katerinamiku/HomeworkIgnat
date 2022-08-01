@@ -1,14 +1,30 @@
-const initState = {
+import {LoadingType} from "../HW10";
 
+const initState: LoadingType = {
+    loadingValue: false
 }
 
-export const loadingReducer = (state = initState, action: any): any => { // fix any
+type SetLoadingAT = {
+    type: 'SET_LOADING'
+    loadingValue: boolean
+}
+
+export type ActionType = SetLoadingAT
+
+export const loadingReducer = (state = initState, action: ActionType): LoadingType => { // fix any
     switch (action.type) {
-        case '': {
-            return state
+        case 'SET_LOADING': {
+            return {...state, loadingValue: action.loadingValue}
         }
-        default: return state
+        default:
+            return state
     }
 }
 
-export const loadingAC = (): any => {} // fix any
+export const loadingAC = (loadingValue: boolean): SetLoadingAT => {
+    return {
+        type: 'SET_LOADING',
+        loadingValue
+    }
+
+}
