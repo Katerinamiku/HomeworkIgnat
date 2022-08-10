@@ -1,0 +1,9 @@
+.sliderWrapper {
+    width: 100px;
+    margin: 10px;
+}
+
+.doubleRange {
+    display: flex;
+    align-items: center;
+}
